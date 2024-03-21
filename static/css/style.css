@@ -442,21 +442,7 @@ h2.subtitle::after {
     display: none;
 }
 
-.lb-cancel {
-    background: url(../img/loading.gif) no-repeat;
-}
 
-.lb-nav a.lb-prev {
-    background: url(../img/prev.avif) left 48% no-repeat;
-}
-
-.lb-nav a.lb-next {
-    background: url(../img/next.avif) right 48% no-repeat;
-}
-
-.lb-data .lb-close {
-    background: url(../img/close.avif) top right no-repeat;
-}
 
 .lightbox {
     position: fixed;

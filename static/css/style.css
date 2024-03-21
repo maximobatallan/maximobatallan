@@ -447,15 +447,15 @@ h2.subtitle::after {
 }
 
 .lb-nav a.lb-prev {
-    background: url(../img/prev.png) left 48% no-repeat;
+    background: url(../img/prev.avif) left 48% no-repeat;
 }
 
 .lb-nav a.lb-next {
-    background: url(../img/next.png) right 48% no-repeat;
+    background: url(../img/next.avif) right 48% no-repeat;
 }
 
 .lb-data .lb-close {
-    background: url(../img/close.png) top right no-repeat;
+    background: url(../img/close.avif) top right no-repeat;
 }
 
 .lightbox {
@@ -1368,7 +1368,7 @@ ul.search-cart-area {
 
 
 .hero-bg {
-    background-image: url('../img/Banner1.png');
+    background-image: url('../img/Banner1.avif');
     background-size: cover;
 }
 
@@ -2381,7 +2381,7 @@ footer .bottom-footer {
 
 .hero-bg-2 {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('../img/banner1.png');
+    background-image: url('../img/banner1.avif');
     
     
     
@@ -2501,7 +2501,7 @@ footer .bottom-footer {
     left: -233%;
     height: 100%;
     width: 207%;
-    background-image: url(../img/AtencionPersonalizada.png);
+    background-image: url(../img/AtencionPersonalizada.avif);
     background-size: cover;
     z-index: -2;
 }
@@ -3315,7 +3315,7 @@ footer .bottom-footer {
 ---------------------------*/
 
 .services-breadcrumb-bg {
-    background-image: url('../img/BANNERBASE3.png');
+    background-image: url('../img/BANNERBASE3.avif');
     background-size: cover;
     background-position: center center; /* Alinea la imagen en el centro del marco */
     background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
@@ -4672,7 +4672,7 @@ div#map {
 }
 
 .rate {
-    background-image: url("../img/rate-star.png");
+    background-image: url("../img/rate-star.avif");
     background-position: 0 -13px;
     background-repeat: repeat-x;
     height: 13px;
@@ -4683,7 +4683,7 @@ div#map {
 }
 
 .rating {
-    background-image: url("../img/rate-star.png");
+    background-image: url("../img/rate-star.avif");
     background-position: 0 0;
     background-repeat: repeat-x;
     height: 13px;

@@ -1,0 +1,164 @@
+{% extends "base.html" %}
+{% load static%}
+{% block head %}
+    {{ block.super }}
+    
+    <!-- easyzoom css -->
+    <link rel="stylesheet" href="{% static 'css/easyzoom.css' %}">
+      <!-- slicknav css -->
+    <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+    <!-- jquery ui css -->
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.min.css' %}">
+    <!-- animate css -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <!-- main css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    
+    {% endblock %}
+       
+
+
+        {% block content %}
+   
+   <body>
+   
+
+     <!--  service details section start  -->
+     <div class="service-details-section">
+        <div class="container">
+           <div class="row">
+              <div class="col-xl-7 col-lg-8">
+                 <div class="service-details-content">
+                    <div class="img-wrapper"><img src="{% static "img/1.png" %}" alt=""></div>
+                    <div class="service-details-desc">
+                       <h2 class="title">Asistente Virtual Integrado, Respuestas Instantáneas en WhatsApp, Instagram y Facebook</h2>
+                       <p style="text-align: justify;">Descubre la revolución en la comunicación digital con nuestro Asistente
+                         Virtual conectado a la API oficial de Meta Developer. Imagina tener un aliado inteligente que responde mensajes
+                          automáticamente en WhatsApp, Instagram y Facebook. Ya sea manejando preguntas predeterminadas o utilizando 
+                          la potencia de ChatGPT para respuestas personalizadas, nuestro asistente lleva la interacción con tus clientes
+                           a un nivel completamente nuevo. La eficiencia y la personalización
+                         se unen para ofrecer una experiencia de usuario inigualable, impulsando la productividad y la satisfacción del cliente.</p>
+                       <div class="overview">
+                          <h3 class="title">Conexión Multicanal sin Esfuerzo</h3>
+                          <p style="text-align: justify;">Simplifica la gestión de tus canales de comunicación con nuestro Asistente Virtual.
+                            Desde WhatsApp hasta Instagram y Facebook, nuestro sistema integrado asegura que no se escape ningún mensaje importante. 
+                            Con respuestas rápidas y relevantes, tu marca siempre está a solo un mensaje de distancia de tus clientes,
+                             brindando atención instantánea 
+                           y fortaleciendo la conexión con tu audiencia.</p>
+                       </div>
+
+                    <div class="img-wrapper"><img src="{% static "img/2.png" %}" alt=""></div>
+                    <div class="overview">
+                        <h3 class="title">Preguntas Predeterminadas para Respuestas Rápidas</h3>
+                        <p style="text-align: justify;">Optimiza tu tiempo y el de tus clientes con preguntas predeterminadas
+                            configuradas en nuestro Asistente Virtual. Desde información básica hasta detalles específicos de productos 
+                            o servicios, nuestro asistente maneja las consultas comunes de manera instantánea, 
+                           permitiéndote centrarte en tareas más estratégicas para tu negocio.</p>
+                     </div>
+                     <div class="img-wrapper"><img src="{% static "img/pedido.png" %}" alt=""></div>
+                     <div class="overview">
+                        <h3 class="title">Inteligencia Artificial Personalizada con ChatGPT</h3>
+                        <p style="text-align: justify;">Eleva la interacción a un nivel superior con la potencia de ChatGPT. 
+                           Nuestro Asistente Virtual no solo responde preguntas comunes, sino que también es capaz de comprender y
+                            responder a consultas más complejas de manera inteligente. Ofrece respuestas personalizadas que reflejen la 
+                            voz y la personalidad de tu marca, 
+                           creando una experiencia de usuario única y memorable.</p>
+                     </div>
+                     <div class="img-wrapper"><img src="{% static "img/direccion.png" %}" alt=""></div>
+                     <div class="overview">
+                        <h3 class="title">Atención las 24 horas</h3>
+                        <p style="text-align: justify;">Con nuestro Asistente Virtual conectado a la API de Meta Developer,
+                            transforma la manera en que te comunicas con tus clientes, brindando respuestas instantáneas y 
+                            personalizadas en los canales que más utilizan. Además, con atención 24 horas, obtén interesados mientras duermes.
+                            ¡Haz que tu marca destaque con una atención al cliente excepcional!</p>
+                     </div>
+                    </div>
+                 </div>
+              </div>
+
+              <a id="chat" href="https://wa.me/5491123927033?text=Hola, quiero realizar un pedido me brindas la carta" class="wow fadeInUp boxed-btn" data-wow-duration="1.5s" style="visibility: visible; animation-duration: 1.5s; animation-name: fadeInUp;"><span>Probar Chat</span></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              {% include "servyconsulta.html" %}
+     <!--  casos de exito section start  -->
+      
+
+     {% include "casosexito.html" %}
+     <!--  casos de exito section end  -->
+     <!--   cta section start    -->
+     <div class="cta-section cta-bg">
+      <div class="container">
+         <div class="cta-container">
+            <div class="row align-items-left">
+              
+                {% include "consulta.html" %}
+              
+               
+            </div>
+         </div>
+      </div>
+      <div class="cta-overlay"></div>
+      
+   </div>
+   <!--   cta section end    -->
+
+
+ <!--   footer start    -->
+ {% include "QA.html" %}
+ {% include "footer.html" %}
+
+ <!-- footer end -->
+
+      <!-- preloader section start -->
+      <div class="loader-container">
+         <span class="loader">
+         <span class="loader-inner"></span>
+         </span>
+      </div>
+      <!-- preloader section end -->
+
+
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <!-- bootstrap js -->
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <!-- owl carousel js -->
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <!-- isotope js -->
+      <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+      <!-- easyzoom js -->
+      
+      <script src="{% static 'js/lightbox.min.js' %}"></script>
+    
+     
+      <!-- slicknav js -->
+      <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+  
+      <!-- wow js -->
+      
+      <script src="{% static 'js/wow.min.js' %}"></script>
+      <!-- main js -->
+      <script src="{% static 'js/main.js' %}"></script>
+    
+   
+   </body>
+      {% endblock %}
+        
+
+</html>

@@ -11,8 +11,8 @@ def home(request):
     return render(request, "home.html", {'context': context})
 
 def send_user_data_email(user_data):
-    subject = 'Nuevo usuario registrado'
-    message = f'Nuevo Usuario:\n\n{user_data}'
+    subject = 'Nuevo usuario maximobatallan.com'
+    message = f'Nuevo Usuario de maximobatallan.com:\n\n{user_data}'
     
 
     from_email = 'notificaciondepaginaweb@gmail.com'
@@ -39,7 +39,7 @@ def save_formulario(request):
     
     
     
-    return render(request, 'home.html')
+    return render(request, 'formulario.html')
 
 
 def asistentevirtual(request):    

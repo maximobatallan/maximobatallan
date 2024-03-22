@@ -118,57 +118,7 @@
       <!--  hero area end  -->
 
       
-      <!--  service section start  -->
-      <div id="servicios" class="service-section home-2">
-         <div class="container">
-            <span class="title">Conozca mi cartera de servicios</span>
-            <h2 class="subtitle">Portafolio</h2>
-            <div class="service-carousel owl-carousel owl-theme">
-               <div class="single-service" onclick="window.location.href='exposicionenlinea.html';" style="cursor: pointer;">
-                  <div class="img-wrapper">
-                     <img src="{% static 'img/exposicionenlinea.avif' %}" alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Exposición en Línea</h4>
-                     <p class="service-para">Consigue Clientes Potenciales a traves de la web, vende tus productos o Servicios en Linea, según tus necesidades</p>
-                     <a href="exposicionenlinea.html" class="readmore">Leer Más</a>
-                  </div>
-               </div>
-               <div class="single-service" onclick="window.location.href='asistentevirtual.html';" style="cursor: pointer;">
-                  <div class="img-wrapper">
-                     <img src="{% static 'img/Asistente virtual.avif' %}" alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Asistente Virtuales</h4>
-                     <p class="service-para">Obten un Asistente Virtual para la atención de tus Cliente con conexion a tus redes sociales. Whatsapp, Instagram, Facebook</p>
-                     <a href="asistentevirtual.html" class="readmore">Leer Más</a>
-                  </div>
-               </div>
-               <div class="single-service" onclick="window.location.href='gestiondelainformacion.html';" style="cursor: pointer;">
-                  <div class="img-wrapper">
-                     <img src="{% static 'img/basededatos.avif' %}" alt="">
-                  </div>
-                  <div class="service-txt">
-                     <h4 class="service-title">Gestión de la Información</h4>
-                     <p class="service-para">Manten la Información de Negocio ordenada, segura y en Línea. Gestion de Bases de datos para recopilar o brindar Información a tus Clientes</p>
-                     <a href="gestiondelainformacion.html" class="readmore">Leer Más</a>
-                  </div>
-               </div>
-               <div class="single-service" onclick="window.location.href='desarrollospersonalizados.html';" style="cursor: pointer;">
-                  <div class="img-wrapper">
-                     <img src="{% static 'img/desarrollopersonalizado.avif' %}" alt="">
-                  </div>
-                  <div class="service-txt" >
-                     <h4 class="service-title">Desarrollos Personalizados</h4>
-                     
-                     <p class="service-para">Productos digitales a Medida del Cliente. Sectores: Finanzas, Recursos Humanos, Comercial, Ventas, Administrativos  </p>
-                     <a href="desarrollospersonalizados.html" class="readmore">Leer Más</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--  service section end  -->
+  
 
 
 
@@ -177,7 +127,7 @@
 
      <!--  casos de exito section start  -->
       
-
+     {% include "casosexito.html" %}
       
       <!--  casos de exito section end  -->
 
@@ -218,7 +168,58 @@
          </div>
       </div>
       <!--  features section end  -->
-     
+       <!--   cta section end    -->   
+      <!--  service section start  -->
+      <div id="servicios" class="service-section home-2">
+         <div class="container">
+            <span class="title">Conozca mi cartera de servicios</span>
+            <h2 class="subtitle">Portafolio</h2>
+            <div class="service-carousel owl-carousel owl-theme">
+               <div class="single-service" onclick="window.location.href='exposicionenlinea.html';" style="cursor: pointer;">
+                  <div class="img-wrapper">
+                     <img src="{% static 'img/exposicionenlinea.avif' %}" alt="">
+                  </div>
+                  <div class="service-txt">
+                     <h4 class="service-title">Exposición en Línea</h4>
+                     <p class="service-para">Consigue Clientes Potenciales a traves de la web, vende tus productos o Servicios en Linea, según tus necesidades</p>
+                     <a href="exposicionenlinea.html" class="readmore">Leer Más</a>
+                  </div>
+               </div>
+               <div class="single-service" onclick="window.location.href='asistentevirtual.html';" style="cursor: pointer;">
+                  <div class="img-wrapper">
+                     <img src="{% static 'img/Asistente Virtual.avif' %}" alt="">
+                  </div>
+                  <div class="service-txt">
+                     <h4 class="service-title">Asistente Virtuales</h4>
+                     <p class="service-para">Obten un Asistente Virtual para la atención de tus Cliente con conexion a tus redes sociales. Whatsapp, Instagram, Facebook</p>
+                     <a href="asistentevirtual.html" class="readmore">Leer Más</a>
+                  </div>
+               </div>
+               <div class="single-service" onclick="window.location.href='gestiondelainformacion.html';" style="cursor: pointer;">
+                  <div class="img-wrapper">
+                     <img src="{% static 'img/basededatos.avif' %}" alt="">
+                  </div>
+                  <div class="service-txt">
+                     <h4 class="service-title">Gestión de la Información</h4>
+                     <p class="service-para">Manten la Información de Negocio ordenada, segura y en Línea. Gestion de Bases de datos para recopilar o brindar Información a tus Clientes</p>
+                     <a href="gestiondelainformacion.html" class="readmore">Leer Más</a>
+                  </div>
+               </div>
+               <div class="single-service" onclick="window.location.href='desarrollospersonalizados.html';" style="cursor: pointer;">
+                  <div class="img-wrapper">
+                     <img src="{% static 'img/desarrollopersonalizado.avif' %}" alt="">
+                  </div>
+                  <div class="service-txt" >
+                     <h4 class="service-title">Desarrollos Personalizados</h4>
+                     
+                     <p class="service-para">Productos digitales a Medida del Cliente. Sectores: Finanzas, Recursos Humanos, Comercial, Ventas, Administrativos  </p>
+                     <a href="desarrollospersonalizados.html" class="readmore">Leer Más</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  service section end  -->
      
 
       <!--   cta section start    -->
@@ -237,8 +238,9 @@
          </div>
          <div class="cta-overlay"></div>
       </div>
-      <!--   cta section end    -->   
-      {% include "casosexito.html" %}
+
+        
+    
 
       {% include "QA.html" %}
 

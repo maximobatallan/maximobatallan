@@ -129,6 +129,21 @@
 }
 
 html,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     overflow-x: hidden;
 }
@@ -896,7 +911,7 @@ h2.subtitle::after {
     position: absolute;
     height: 5px;
     width: 5px;
-    background-color: #183650;
+    
     border-radius: 50%;
     top: 50%;
     left: -9px;
@@ -905,13 +920,7 @@ h2.subtitle::after {
     transform: translateY(-50%);
 }
 
-.navbar-area nav ul li.active a {
-    color: #183650;
-}
 
-.navbar-area nav ul li.dropdown.active::after {
-    color: #183650;
-}
 
 .navbar-area nav ul li:last-child {
     margin-right: 0px;
@@ -1354,7 +1363,7 @@ ul.search-cart-area {
 
 
 .hero-bg {
-    background-image: url('../img/Banner1.avif');
+    background-image: url('../img/nuevofondo.avif');
     background-size: cover;
 }
 
@@ -1362,7 +1371,7 @@ ul.search-cart-area {
 .hero-txt {
     position: relative;
     z-index: 2;
-    background: #000000e8;
+   
     padding: 20px;
     color: #fff;
     
@@ -2367,10 +2376,10 @@ footer .bottom-footer {
 
 .hero-bg-2 {
     background-color: rgba(0, 0, 0, 0.5);
-    background-image: url('../img/Banner1.avif');
-    
-    
-    
+    background-image: url('../img/nuevofondo.avif');
+    background-size: cover; /* Ajusta el tamaño del fondo para cubrir el contenedor */
+    background-position: center; /* Centra el fondo dentro del contenedor */
+    /* Agrega otras propiedades según sea necesario, como background-repeat */
 }
 
 .home-2.hero-area {
@@ -2461,7 +2470,7 @@ footer .bottom-footer {
 
 .home-2 .features {
     background-color: #fafbfc;
-    padding: 111px 0px 99px;
+    padding: 111px 0px 0px;
 }
 
 .home-2 .feature-content {
@@ -2567,7 +2576,7 @@ footer .bottom-footer {
 }
 
 .home-2.service-section {
-    padding: 111px 0px 113px;
+    padding: 111px 0px 15px;
 }
 
 
@@ -2583,10 +2592,26 @@ footer .bottom-footer {
     border: none;
 }
 
+
+@media screen and (min-width: 741px) {
 .hero-bg-3 {
-    background-image: url('../img/home_3/hero_bg.jpg');
+    background-image: url('../img/maximobatallan10.avif');
     background-size: cover;
+    padding: 5%;
+    }
 }
+
+@media screen and (max-width: 741px) {
+    .hero-bg-3 {
+        background-image: url('../img/maximobatallanmobile.avif');
+        background-size: cover;
+        background-position: top center; /* Alinear la imagen en la parte superior del contenedor */
+    
+        }
+    }
+
+/* Estilos para pantallas más pequeñas o iguales a 740px */
+
 
 .home-3.hero-area .hero-overlay {
     position: absolute;
@@ -2688,7 +2713,6 @@ footer .bottom-footer {
 .home-3 .support-nav-area {
     padding: 23px 0px;
     background-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .home-3 .search-cart-area li:first-child::after {

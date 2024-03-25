@@ -36,67 +36,62 @@
       
    </head>
 
-    <body>
-        <!--   header area start   -->
-      <div class="header-area">
-    
-           <div class="support-nav-area">
-            
+   <body>
+      <!--   header area start   -->
+      <div class="header-area home-3">
+         <div class="info-bar">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="contact-infos">
+                        <div class="email">
+                           <div class="icon-wrapper"><i class="flaticon-call"></i></div>
+                           <div>+ 549 3659-5835</div>
+                        </div>
+                        <div class="phone">
+                           <div class="icon-wrapper"><i class="flaticon-email"></i></div>
+                           <div>maximobatallan@gmail.com</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="right-content">
+                        <ul class="social-links">
+                      
+                           <li><a href="https://www.linkedin.com/in/maximo-batallan-9a2508103/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                         
+                        </ul>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="support-nav-area">
             <div class="container">
                <div class="row">
                   <div class="col-lg-3 col-6">
                      <div class="logo-wrapper">
                         <div class="logo-wrapper-inner">
-          
-                           <a href="#"><img src="{% static 'img/logoprueba2.avif' %}" alt=""></a>
-                         
+                           <a href="/"><img src="{% static 'img/mb.avif' %}" alt="maximobatallan"></a>
+                           
+                        
                         </div>
                      </div>
                   </div>
-                  <div class="col-lg-9 col-6 position-lg-relative position-static">
-                     <div class="support-bar">
-                        <div class="row">
-                           <div class="offset-xl-4 col-xl-8 offset-2 col-10">
-                              <div class="row">
-                                 <div class="col-lg-4">
-                                    <div class="support-info">
-                                       <div class="left-content"><i class="flaticon-call"></i></div>
-                                       <div class="right-content">
-                                          <div class="right-content-inner">
-                                             <h5>Contactanos</h5>
-                                             <p>+ 549 2396-5421</p>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-4">
-                                    <div class="support-info">
-                                       <div class="left-content"></div>
-                                       <div class="right-content">
-                                          <h5></h5>
-                                          <p> </p>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-lg-4">
-                                    <a href="#formulario" class="boxed-btn"><span>Contactanos</span></a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="col-lg-9 col-6 position-static">
                      <div class="navbar-area">
                         <div class="row">
-                           <div class="col-lg-9 d-lg-block d-none">
-                              <nav class="main-menu" id="mainMenu">
+                           <div class="col-12 position-static">
+                              <nav class="main-menu" id="mainMenuHome3">
+                                 
                                  <ul>
                                     <li>
-                                        <a href="/">Inicio</a>
-                                        
-                                     </li>
-                                    <li class="dropdown">
-                                        
-                                        <a href="#servicios">Servicios</a>
+                                       <a href="{% url 'home' %}">Inicio</a>
+                                    </li>
+                                    <li class="dropdown active">
+                                     
+                                       <a href="#servicios">Servicios</a>
                                         <ul>
                                           
                                          
@@ -116,22 +111,11 @@
                                     </li>
                                     <li>
                                         <a href="#formulario">Contacto</a>
-                                     </li>
-                                    
-                                    
+                                    </li>
                                  </ul>
                               </nav>
-                           </div>
-                           <div class="col-lg-3 col-12 position-lg-relative position-static">
-                              <div id="mobileMenu"></div>
-                              <ul class="search-cart-area">
-                               
-                                <li>
-                                    <a href="https://www.linkedin.com/in/maximo-batallan-9a2508103/" target="_blank">LinkedIn</a>
-                                 </li>
-                                
-                                
-                              </ul>
+                              <div id="mobileMenuHome3"></div>
+                         
                            </div>
                         </div>
                      </div>
@@ -140,8 +124,18 @@
             </div>
          </div>
       </div>
-      
+      <!--   header area end   -->
 
+
+      <!--   search bar popup start   -->
+      <div class="search-popup">
+         <form class="search-form" action="#">
+            <div class="form-element"><input type="text" placeholder="Type your search keyword"></div>
+         </form>
+         <div class="search-popup-overlay" id="searchOverlay"></div>
+         <button class="search-close-btn" id="searchCloseBtn"><i class="fas fa-times"></i></button>
+      </div>
+      <!--   search bar popup end   -->  
  
    
 

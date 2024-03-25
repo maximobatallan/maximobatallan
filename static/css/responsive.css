@@ -640,7 +640,7 @@
 
 @media only screen and (max-width: 767px) {
     .hero-area h1 {
-        font-size: 66px;
+        font-size: 40px;
     }
     .news-section div[class*="col-"] .single-news {
         margin-bottom: 33px;

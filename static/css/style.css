@@ -2097,41 +2097,25 @@ ul.search-cart-area {
 ---------------------------*/
 
 
-@media (max-width: 768px) {
-   
-    #whatsapp-btn {
+#whatsapp-btn {
         position: fixed;
-        bottom: 5%;
-        right: 5%;
-        width: 9%;
-        
-        background-color: green;
+        bottom: 30px;
+        right: 30px;
+        width: 60px; /* Establece el ancho */
+        height: 60px; /* Establece el alto igual al ancho */
+        cursor: pointer;
+        background-color: #25d366;
+        border-radius: 100%;
+        box-shadow: 1px 1px 4px 0 rgba(0,0,0,.3);
+        line-height: 60px;
         border-radius: 50%;
         text-align: center;
         font-size: 2em;
         color: #fff;
-        z-index: 6;
+        z-index: 10000;
         opacity: 0.8;
         animation: whatsapp-btn 1s ease-in-out infinite alternate;
-    }}
-  
-  @media (min-width: 769px) {
-   
-    #whatsapp-btn {
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
-        width: 3%;
-        
-        background-color: green;
-        border-radius: 50%;
-        text-align: center;
-        font-size: 2em;
-        color: #fff;
-        z-index: 2;
-        opacity: 0.8;
-        animation: whatsapp-btn 1s ease-in-out infinite alternate;
-    }}
+    }
 
 .cta-section {
     padding: 70px 0px;

@@ -1193,6 +1193,7 @@ ul.search-cart-area {
     border: none;
     -webkit-animation: navFadeIn 1s;
     animation: navFadeIn 1s;
+    background: #183650;
 }
 
 @-webkit-keyframes navFadeIn {
@@ -2696,7 +2697,8 @@ footer .bottom-footer {
 
 .home-3 .support-nav-area {
     padding: 23px 0px;
-    background-color: transparent;
+    background-color: #183650;
+	
 }
 
 .home-3 .search-cart-area li:first-child::after {

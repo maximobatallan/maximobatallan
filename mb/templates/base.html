@@ -67,7 +67,12 @@
                </div>
             </div>
          </div>
-         <div class="support-nav-area">
+         <div class="support-nav-area" id="support-nav-area">
+            <script>
+              if (window.location.pathname === '/') {
+                document.getElementById('support-nav-area').style.background = 'transparent';
+              }
+            </script>
             <div class="container">
                <div class="row">
                   <div class="col-lg-3 col-6">

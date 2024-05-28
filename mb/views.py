@@ -20,26 +20,7 @@ def send_user_data_email(user_data):
     send_mail(subject, message, from_email, recipient_list)
 
 
-@csrf_exempt
-def save_formulario(request):
-    
 
-    nombre = request.POST.get('nombre')
-
-    telefono = request.POST.get('telefono')
-    email = request.POST.get('email')
-    texto = request.POST.get('texto')
-    categoria = request.POST.get('categoria')
-    
-    
-    formulario1 = formulario(nombre=nombre, categoria=categoria, telefono=telefono, mail=email, texto=texto)
-    formulario1.save()
-    user_data = f"nombre: {nombre} telefono: {telefono} categoria: {categoria} texto: {texto}"
-    send_user_data_email(user_data)
-    
-    
-    
-    return render(request, 'formulario.html')
 
 
 def asistentevirtual(request):    
